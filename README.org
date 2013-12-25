@@ -1,0 +1,14 @@
+* NAS4Free HAST checker for Zabbix
+** 何をするものか
+  - zabbixでhastの状態が監視できるようにSSH経由でhastctl status {hastname}を実行し、問題なければ1, 問題があると0を出力。
+** 実行方法
+  + リポジトリをクローン
+  + config.rbをmonitor.rbを参考にして作成
+  + 下記の通り実行
+  #+BEGIN_SRC sh
+   $ cd path_to_nas4free_hast_checker_for_zabbix
+   $ bundle install
+   $ ruby monitor.rb 
+  #+END_SRC
+
+
